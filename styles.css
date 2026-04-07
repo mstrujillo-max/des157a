@@ -1,0 +1,268 @@
+body{
+    background-color: #B4D5E2;
+}
+
+header{
+    background-color: #B4D5E2;
+}
+
+main{
+    background-color: #6B0504;
+    
+}
+article{
+    background-color: #B4D5E2;
+    padding: 20px 13px;
+    flex: 1;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+
+.projects{
+    width: 1000px;
+    display: flex;
+    margin: auto;
+    gap: 22px;
+}
+
+/* header nav bar maybe implement later  */
+nav ul li a{
+    flex: auto;
+    text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+    margin: auto;
+    gap: 20px;
+    justify-content: center;
+
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+/* article buttons */
+article ul li{
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+article ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+article ul li a{
+    text-decoration: none;
+}
+
+
+/* text styling */
+h1{
+    font-family: "Outfit";
+    font-weight: 900;
+    font-size: 64px;
+    color: #152528;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+h2{
+    font-family: "Outfit";
+    font-weight: 600;
+    color: #152528;
+
+}
+
+p,a{
+    font-family: "Outfit";
+    font-weight: 400;
+
+}
+
+p{
+    color: #152528;
+}
+
+.typewriter-effect{
+    font-family: "Outfit";
+    font-weight: 600;
+}
+.effect-container{
+    text-align: center;
+}
+
+footer p, footer a{
+    font-weight: 600;
+    text-align: center;
+    color: #152528;
+}
+
+
+
+/* button componets */
+article a{
+    background-color: #152528;
+    color: #B4D5E2;
+    padding: 10px;
+    text-align: center;
+    display: block;
+
+}
+
+nav a{
+    background-color: #152528;
+    color: #B4D5E2;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    width: 80px;
+}
+
+
+
+/* animations */
+
+
+
+/* hover state nav */
+nav a {
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #6B0504; 
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+/* article hover */
+article a {
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+article a:hover {
+  background-color: #6B0504; 
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+footer a{
+transition: 
+    color 0.3s ease;
+
+}
+
+footer a:hover{
+    color:#6B0504;
+    cursor: pointer;
+
+}
+.typewriter-effect {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #152528;
+
+  animation: 
+    typing 20s steps(33) infinite,
+    blink 0.8s infinite;
+}
+
+@keyframes typing {
+  0%, 10% { max-width: 0ch; }
+  40%, 60% { max-width: 33ch; }
+  90%, 100% { max-width: 0ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/*infinite stars*/
+.background {
+  position: relative;
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+/* the star color */
+  background: #15252897;   
+  opacity: 0;
+  transform: rotate(45deg);
+
+
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+
+  animation: fade 6s ease-in-out infinite;
+}
+
+
+/* smooth fade in/out */
+@keyframes fade {
+  0%, 100% { 
+    opacity: 0;
+    transform: scale(0.6) rotate(45deg);
+  }
+  50% { 
+    opacity: 1;
+    transform: scale(1.2) rotate(45deg);
+  }
+}
+
+
+.star:nth-child(1)  { top: 10px; left: 5%;  animation-delay: 0s; }
+.star:nth-child(2)  { top: 30px; left: 10%; animation-delay: 1s; }
+.star:nth-child(3)  { top: 60px; left: 15%; animation-delay: 2s; }
+.star:nth-child(4)  { top: 20px; left: 20%; animation-delay: 0.5s; }
+.star:nth-child(5)  { top: 50px; left: 25%; animation-delay: 1.5s; }
+
+.star:nth-child(6)  { top: 15px; left: 35%; animation-delay: 2.5s; }
+.star:nth-child(7)  { top: 40px; left: 40%; animation-delay: 0.8s; }
+.star:nth-child(8)  { top: 70px; left: 45%; animation-delay: 1.2s; }
+.star:nth-child(9)  { top: 25px; left: 50%; animation-delay: 2.2s; }
+.star:nth-child(10) { top: 55px; left: 55%; animation-delay: 0.3s; }
+
+.star:nth-child(11) { top: 10px; left: 65%; animation-delay: 1.7s; }
+.star:nth-child(12) { top: 35px; left: 70%; animation-delay: 2.8s; }
+.star:nth-child(13) { top: 65px; left: 75%; animation-delay: 0.6s; }
+.star:nth-child(14) { top: 20px; left: 80%; animation-delay: 1.1s; }
+.star:nth-child(15) { top: 50px; left: 85%; animation-delay: 2.4s; }
+
+.star:nth-child(16) { top: 15px; left: 90%; animation-delay: 0.9s; }
+.star:nth-child(17) { top: 40px; left: 95%; animation-delay: 1.9s; }
+.star:nth-child(18) { top: 70px; left: 30%; animation-delay: 2.6s; }
+.star:nth-child(19) { top: 25px; left: 60%; animation-delay: 0.4s; }
+.star:nth-child(20) { top: 55px; left: 75%; animation-delay: 1.4s; }
+
