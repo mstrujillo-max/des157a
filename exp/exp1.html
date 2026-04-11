@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Experiment 1</h1>
+    <h2>open the console to see the functionality of the code</h2>
+
+    <script>
+    // the sequence
+    let myAge = 21;
+    let guess;
+
+    // the loop
+    for (let i = 0; guess != myAge; i++) {
+// the loop
+    guess = prompt("Guess how old I am");
+
+    // selection
+    if (guess == myAge) {
+
+    console.log("You got it right!");
+    } 
+
+    else if (guess < myAge) {
+    console.log("I am not that young. Try again.");
+    } 
+
+    else {
+    console.log("I am not that old. Try again.");
+    }
+
+}   
+    </script>
+</body>
+</html>
