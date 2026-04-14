@@ -11,6 +11,12 @@ main{
     
 }
 
+img{
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+
 article{
     background-color: #B4D5E2;
     padding: 30px 60px;
