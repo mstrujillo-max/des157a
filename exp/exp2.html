@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changing</title>
+</head>
+<body>
+    <h1>Let's change up the colors!</h1>
+    <p>Pick a color from the options listed: Red, Blue, or Yellow</p>
+    <button onclick ="pickColor()">Pick a color</button>
+    <p class="result"></p>
+
+<script>
+    // when the user is prompted they type in one of the colors listed red, blue, or yellow 
+    // and if they return one of the desired inputs it will change the background of the page 
+    // to the color they picked.
+    
+    var colors = ["Red", "Blue", "Yellow"];
+
+    function promptMessage() {
+        var message = "Pick a color: Red, Blue, or Yellow";
+        return message;
+    }
+
+    function findColor(input) {
+        for (var i = 0; i < colors.length; i++) {
+            if (colors[i].toLowerCase() === input.toLowerCase()) {
+                return colors[i];
+            }
+        }
+        return null;
+    }
+
+    function pickColor() {
+        var message = promptMessage();
+        var input = prompt(message);
+        var pResult = document.querySelector(".result");
+
+        if (!input) {
+            pResult.innerHTML = "Please enter a color!";
+            return;
+        }
+
+        var matched = findColor(input);
+
+        if (matched) {
+            document.body.style.backgroundColor = matched;
+            pResult.innerHTML = "You picked: " + matched;
+        } else {
+            pResult.innerHTML = "Color not found. Try again!";
+        }
+    }
+</script>
+</body>
+</html>
