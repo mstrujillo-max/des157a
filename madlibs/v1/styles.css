@@ -40,7 +40,6 @@ main h2{
     text-decoration: none;
     padding: 5px 20px;
     border-radius: 20px;
-    box-shadow: black;
 }
 
 #close:hover{
@@ -95,7 +94,6 @@ input[type="submit"]{
     font-weight: 400;
     font-family: "Outfit";
     border-radius: 20px;
-    border-color: none;
     border-style: none;
     font-size: 16px;
 }
