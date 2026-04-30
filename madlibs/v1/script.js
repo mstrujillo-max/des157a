@@ -5,6 +5,9 @@
     const madlibQuestions = document.querySelector("#madlib-questions");
     const madlib = document.querySelector("#madlib");
     const madlibOverlay = document.querySelector('#madlib-overlay');
+    const closeBtn = document.querySelector('#close');
+    const errorMessage = document.querySelector('#error');
+
 
     madlibQuestions.addEventListener("submit", function(event){
         event.preventDefault();
@@ -23,34 +26,50 @@
         if(place1 == ""){
             myText ="please provide a place";
             document.querySelector("#place1").focus();
+            errorMessage.innerHTML = myText;
+
         }
         else if(place2 == ""){
             myText ="please provide a second place";
             document.querySelector("#place2").focus();
+            errorMessage.innerHTML = myText;
+
         }
         else if(animal == ""){
             myText ="please provide an animal";
             document.querySelector("#animal").focus();
+            errorMessage.innerHTML = myText;
+
         }
         else if(food1 == ""){
             myText ="please provide a food";
             document.querySelector("#food1").focus();
+            errorMessage.innerHTML = myText;
+
         }
         else if(food2 == ""){
             myText ="please provide a different food";
             document.querySelector("#food2").focus();
+            errorMessage.innerHTML = myText;
+
         }
         else if(food3 == ""){
             myText ="please provide another different food";
             document.querySelector("#food3").focus();
+            errorMessage.innerHTML = myText;
+
         }
         else if(emotion == ""){
             myText ="please provide an emotion";
             document.querySelector("#emotion").focus();
+            errorMessage.innerHTML = myText;
+
         }
         else if(actionVerb == ""){
             myText ="please provide an action verb";
             document.querySelector("#actionVerb").focus();
+            errorMessage.innerHTML = myText;
+
         }else{
             myText= `<h2>Starry's Adventure</h2>
                 <p>Starry loves going to the <span>${place1}</span> everyday but one day he went to the <span>${place2}</span>.When he got to the <span>${place2}</span>
@@ -69,6 +88,8 @@
 
             madlib.innerHTML = myText
             madlibOverlay.style.display = "block";
+            madlibQuestions.style.backgroundColor = "#361D2E";
+
 
         }
    
@@ -76,4 +97,21 @@
 
     });
     
+    closeBtn.addEventListener('click', function(event){
+        event.preventDefault();
+        madlibOverlay.style.display = "none";
+        madlibQuestions.style.backgroundColor = "#843000";
+
+    });
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            madlibOverlay.style.display = "none";
+            madlibQuestions.style.backgroundColor = "#843000";
+
+
+        }
+    });
+
+
 })();
