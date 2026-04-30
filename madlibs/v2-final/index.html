@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starry Madlibs</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Palette+Mosaic&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script> 
+
+</head>
+<body>
+    <div class="top-star">
+    <img src="images/star.png" alt="star and question symbol" width="265">
+    </div>
+
+    <div class="bottom-star">
+    <img src="images/basket-stars.png" alt="star and multiple question mark symbols" width="238">
+    </div>
+    
+    <header>
+        <h1>MadLibs</h1>
+        <h2>Input the required categories to find out what Starry did!</h2>
+    </header>
+
+    <main id="madlib-questions">
+        <h2>Get Started</h2>
+        <form>
+            <div>
+            <label for="place1">A place:</label><br>
+            <input type="text" id="place1" name="place1"><br>
+            </div>
+
+            <div>
+            <label for="place2">A different place:</label><br>
+            <input type="text" id="place2" name="place2"><br>
+            </div>
+ 
+            <div>
+            <label for="animal">An animal:</label><br>
+            <input type="text" id="animal" name="animal"><br>
+            </div>
+
+            <div>
+            <label for="food1">A food:</label><br>
+            <input type="text" id="food1" name="food1"><br>
+            </div>
+
+            <div>
+            <label for="food2">A different food:</label><br>
+            <input type="text" id="food2" name="food2"><br>
+            </div>
+
+            <div>
+            <label for="food3">Another different food:</label><br>
+            <input type="text" id="food3" name="food3"><br>
+            </div>
+ 
+            <div>
+            <label for="emotion">An emotion:</label><br>
+            <input type="text" id="emotion" name="emotion"><br>
+            </div>
+
+            <div>
+            <label for="actionVerb">A verb:</label><br>
+            <input type="text" id="actionVerb" name="actionVerb"><br>
+            </div>
+            
+            <div>
+            <input type="submit" value="Create Starry’s Adventure">
+            </div>
+
+            <div id="error"></div>
+
+
+        </form>
+
+        <section id="madlib-overlay">
+            <article>
+            
+                <div id="madlib">
+                <h2> Starry's New Day</h2>
+                //Starry loves going to the place1 everyday but one day he went to the place2When he got to the place2
+                Starry noticed something odd. There was a animal having a huge picnic. There was so much food. The animal had food1, food2 and, food3. Starry’s favorite food was food2. Starry came to the place2 for a short outing but forgot to eat before coming. His stomach was grumbling so loud the animal heard. 
+                Starry was so embarrassed he was going to run away. Until the animal called him over. Starry came closer and the animal said “I have so much food but my friend canceled, would you like to join me?” Doodle guy sat down and ate food1, food2 and, food3 with so much emotion. Starry told animal I'm going to verb here everyday.
+                </div>
+                
+                <p><a href="#" id="close">Close</a></p>
+
+            </article>
+        </section>
+
+    </main>
+
+
+</body>
+</html>
