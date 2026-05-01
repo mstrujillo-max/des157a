@@ -88,7 +88,6 @@
 
             madlib.innerHTML = myText
             madlibOverlay.style.display = "block";
-            madlibQuestions.style.backgroundColor = "#361D2E";
 
 
         }
@@ -100,14 +99,12 @@
     closeBtn.addEventListener('click', function(event){
         event.preventDefault();
         madlibOverlay.style.display = "none";
-        madlibQuestions.style.backgroundColor = "#843000";
 
     });
 
     document.addEventListener('keydown', function (event) {
         if (event.key === 'Escape') {
             madlibOverlay.style.display = "none";
-            madlibQuestions.style.backgroundColor = "#843000";
 
 
         }
