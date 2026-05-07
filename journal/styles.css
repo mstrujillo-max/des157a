@@ -53,13 +53,17 @@ h2{
 
 }
 
-p,a{
+p,a,figcaption{
     font-family: "Outfit";
     font-weight: 400;
 
 }
 
-p{
+figcaption{
+    text-align: center;
+}
+
+p,figcaption{
     color: #152528;
     line-height: 2em;
 }
