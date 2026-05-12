@@ -1,0 +1,47 @@
+h1{
+    color: black;
+}
+
+.container1 img{
+    display: block;
+    margin: auto;
+
+}
+
+.outer{
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid black;
+    margin-left: 500px;
+}
+.container1 {
+    clip-path: circle(0% at 50% 50%);
+    transition: clip-path 400ms ease;
+}
+
+.outer:hover .container1{
+    clip-path: circle(100% at 50% 50%);
+}
+
+.container2 img{
+ filter: grayscale(100%);
+ transition: filter 600ms ease;
+ margin-left: 500px;
+}
+
+.container2:hover img{
+    filter: grayscale(0%);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-6px); }
+}
+
+.container1 {
+  animation: float 3s ease-in-out infinite;
+}
+
+.container1:hover {
+  animation-play-state: paused;
+}
