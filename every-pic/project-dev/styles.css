@@ -54,10 +54,14 @@ h2{
 
 /* big shelf */
 .frame2{
-    display: block;
+    display: flex;
     scale: 120%;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+
     display: none;
+    
 }
 
 .frame2 img{
@@ -81,33 +85,25 @@ h2{
 }
 
 
-/* College Park */
-.frame3{
-    display: flex;
-    margin: 200px 100px;
-    gap: 200px;    
-    position: relative;
-    /* display: none; */
 
-}
-
-.frame3 .text{
+.collegePark .text,
+.mabelsMarket .text,
+.arboretum .text
+.mercado .text
+.varsity .text
+.temple .text{
     width: 600px;
 }
 
 
-.frame3 h2{
+.collegePark h2, .mabelsMarket h2, .arboretum h2, .mercado h2, .varsity h2, .temple h2{
     line-height: 36px;
 }
-.square{
-    background-image: url(images/kitty.svg);
-    border: white solid 20px;
-    width: 400px;
-    height: 450px;
-    display: block;
+
+.container{
     position: relative;
-    z-index: 0;
 }
+
 
 .heart{
     z-index: 1;
@@ -131,4 +127,135 @@ h2{
   50%  { transform: translateY(0)     rotate(0deg); }
   75%  { transform: translateY(-6px)  rotate(-12deg); }
   100% { transform: translateY(0)     rotate(0deg); }
+}
+
+
+.collegePark{
+    display: flex;
+    gap: 200px;    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    /* display: none; */
+
+}
+.collegePark .square{
+    background-image: url(images/kitty.svg);
+    border: white solid 20px;
+    width: 400px;
+    height: 450px;
+    display: block;
+    z-index: 0;
+    
+}
+
+.collegePark .leftSquare{
+    width: 107px;
+    height: 100px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+
+.collegePark .middleSquare{
+    width: 138px;
+    height: 130px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    top: -150px;
+    left: 120px;
+}
+
+.collegePark .rightSquare{
+    width: 120px;
+    height: 115px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    top: -80px;
+    left: 300px;
+}
+
+
+.mabelsMarket{
+    display: flex;
+    gap: 200px;    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    display: none;
+
+}
+.mabelsMarket .square{
+    background-image: url(images/mabels-outside.svg);
+    border: white solid 20px;
+    width: 400px;
+    height: 450px;
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+
+
+
+
+.arboretum{
+    display: flex;
+    gap: 200px;    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    display: none;
+}
+
+.arboretum .square{
+    background-image: url(images/tree.svg);
+    border: white solid 20px;
+    width: 400px;
+    height: 450px;
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+
+
+
+
+.mercado{
+    display: flex;
+    gap: 200px;    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    display: none;
+
+}
+
+.varsity{
+    display: flex;
+    gap: 200px;    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    display: none;
+
+}
+
+.temple{
+    display: flex;
+    gap: 200px;    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    display: none;
+
 }
