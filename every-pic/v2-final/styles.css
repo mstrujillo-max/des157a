@@ -31,9 +31,11 @@ h2{
 }
 
 svg{
+    cursor: pointer;
     opacity: 0;
 }
 .button{
+    cursor: pointer;
     width: 200px;
     background-color: #FFF;
     color: #000;
@@ -60,10 +62,12 @@ svg{
     gap: 100px;
     max-width: 1000px;  
     margin: auto;  
-    margin-top: 100px;
+    margin-top: 150px;
     /* display: none; */
 
 }
+
+
 
 /* big shelf */
 .frame2 .container2 {
@@ -122,15 +126,25 @@ svg{
     position: absolute;
     top: 400px;
     left: 350px;
+    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.444));
+
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
 
 .heart img {
-  transition: transform 0.6s ease-out; /* eases back to normal on mouse-off */
+    cursor: pointer;
+    animation: pulse 1.5s infinite ease-in-out;
+    transition: transform 0.6s ease-out; /* eases back to normal on mouse-off */
 }
 
 .heart img:hover {
-  animation: heartbeat 1.2s ease-in-out infinite;
-  transition: none; /* disable transition while animating */
+    animation: heartbeat 1.2s ease-in-out infinite;
+    transition: none; /* disable transition while animating */
 }
 
 @keyframes heartbeat {
@@ -148,7 +162,7 @@ svg{
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 100px;
     display: none;
 
 }
@@ -167,14 +181,20 @@ svg{
     width: 107px;
     height: 100px;
     background-color: #FFF;
-    border: 2px solid #FFF;
     z-index: 1;
     position: absolute;
-    top: -50px;
+
+    border: 5px solid #FFF;
+    top: 80px;
     left: -50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(-20deg);
+
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
+
+
 }
 
 .collegePark .middleSquare{
@@ -182,14 +202,20 @@ svg{
     width: 138px;
     height: 130px;
     background-color: #FFF;
-    border: 2px solid #FFF;
     z-index: 1;
     position: absolute;
-    top: -150px;
-    left: 120px;
+
+    border: 5px solid #FFF;
+    top: 10px;
+    left: 50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(10deg);
+
+
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
+
 }
 
 .collegePark .rightSquare{
@@ -197,14 +223,20 @@ svg{
     width: 120px;
     height: 115px;
     background-color: #FFF;
-    border: 2px solid #FFF;
     z-index: 1;
     position: absolute;
-    top: -80px;
-    left: 300px;
+
+    top: -50px;
+    left: 200px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
     scale: 0;
+    transform: rotate(-10deg);
+    border: 5px solid #FFF;
+
+
     opacity: 0;
     transition: all 0.5s ease;
+
 }
 
 
@@ -217,7 +249,7 @@ svg{
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 100px;
     display: none;
 
 }
@@ -239,12 +271,15 @@ svg{
     background-color: #FFF;
     z-index: 1;
     position: absolute;
-    top: -50px;
-    left: -50px;
-    border: 2px solid #FFF;
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
+
+    border: 5px solid #FFF;
+    top: 80px;
+    left: -50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(-20deg);
 }
 
 .mabelsMarket .middleSquare{
@@ -254,12 +289,16 @@ svg{
     background-color: #FFF;
     z-index: 1;
     position: absolute;
-    top: -150px;
-    left: 120px;
-    border: 2px solid #FFF;
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
+
+    border: 5px solid #FFF;
+    top: 10px;
+    left: 50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(10deg);
+
 }
 
 .mabelsMarket .rightSquare{
@@ -269,12 +308,17 @@ svg{
     background-color: #FFF;
     z-index: 1;
     position: absolute;
-    top: -80px;
-    left: 300px;
-    border: 2px solid #FFF;
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
+
+    top: -50px;
+    left: 200px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    scale: 0;
+    transform: rotate(-10deg);
+    border: 5px solid #FFF;
+
 }
 
 
@@ -285,7 +329,7 @@ svg{
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 100px;
     display: none;
 }
 
@@ -306,12 +350,15 @@ svg{
     background-color: #FFF;
     z-index: 1;
     position: absolute;
-    top: -50px;
-    left: -50px;
-    border: 2px solid #FFF;
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
+
+    border: 5px solid #FFF;
+    top: 80px;
+    left: -50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(-20deg);
 }
 
 .arboretum .middleSquare{
@@ -321,12 +368,15 @@ svg{
     background-color: #FFF;
     z-index: 1;
     position: absolute;
-    top: -150px;
-    left: 120px;
-    border: 2px solid #FFF;
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
+    border: 5px solid #FFF;
+    top: 10px;
+    left: 50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(10deg);
+
 }
 
 .arboretum .rightSquare{
@@ -336,12 +386,17 @@ svg{
     background-color: #FFF;
     z-index: 1;
     position: absolute;
-    top: -80px;
-    left: 300px;
-    border: 2px solid #FFF;
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
+
+    top: -50px;
+    left: 200px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    scale: 0;
+    transform: rotate(-10deg);
+    border: 5px solid #FFF;
+
 }
 
 
@@ -352,7 +407,7 @@ svg{
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 100px;
     display: none;
 
 }
@@ -375,12 +430,15 @@ svg{
     background-color: #FFF;
     z-index: 1;
     position: absolute;
-    top: -50px;
-    left: -50px;
-    border: 2px solid #FFF;
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
+
+    border: 5px solid #FFF;
+    top: 80px;
+    left: -50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(-20deg);
 }
 
 .mercado .middleSquare{
@@ -390,12 +448,15 @@ svg{
     background-color: #FFF;
     z-index: 1;
     position: absolute;
-    top: -150px;
-    left: 120px;
-    border: 2px solid #FFF;
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
+    border: 5px solid #FFF;
+    top: 10px;
+    left: 50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(10deg);
+
 }
 
 .mercado .rightSquare{
@@ -405,12 +466,17 @@ svg{
     background-color: #FFF;
     z-index: 1;
     position: absolute;
-    top: -80px;
-    left: 300px;
-    border: 2px solid #FFF;
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
+
+    top: -50px;
+    left: 200px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    scale: 0;
+    transform: rotate(-10deg);
+    border: 5px solid #FFF;
+
 }
 
 
@@ -422,7 +488,7 @@ svg{
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 100px;
     display: none;
 
 }
@@ -444,12 +510,15 @@ svg{
     background-color: #FFF;
     z-index: 1;
     position: absolute;
-    top: -50px;
-    left: -50px;
-    border: 2px solid #FFF;
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
+
+    border: 5px solid #FFF;
+    top: 80px;
+    left: -50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(-20deg);
 }
 
 .varsity .middleSquare{
@@ -459,12 +528,15 @@ svg{
     background-color: #FFF;
     z-index: 1;
     position: absolute;
-    top: -150px;
-    left: 120px;
-    border: 2px solid #FFF;
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
+    border: 5px solid #FFF;
+    top: 10px;
+    left: 50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(10deg);
+
 }
 
 .varsity .rightSquare{
@@ -474,12 +546,17 @@ svg{
     background-color: #FFF;
     z-index: 1;
     position: absolute;
-    top: -80px;
-    left: 300px;
-    border: 2px solid #FFF;
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
+
+    top: -50px;
+    left: 200px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    scale: 0;
+    transform: rotate(-10deg);
+    border: 5px solid #FFF;
+
 }
 
 
@@ -490,7 +567,7 @@ svg{
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 100px;
     display: none;
 
 }
@@ -512,12 +589,15 @@ svg{
     background-color: #FFF;
     z-index: 1;
     position: absolute;
-    top: -50px;
-    left: -50px;
-    border: 2px solid #FFF;
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
+
+    border: 5px solid #FFF;
+    top: 80px;
+    left: -50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(-20deg);
 }
 
 .temple .middleSquare{
@@ -527,12 +607,15 @@ svg{
     background-color: #FFF;
     z-index: 1;
     position: absolute;
-    top: -150px;
-    left: 120px;
-    border: 2px solid #FFF;
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
+    border: 5px solid #FFF;
+    top: 10px;
+    left: 50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(10deg);
+
 }
 
 .temple .rightSquare{
@@ -542,10 +625,15 @@ svg{
     background-color: #FFF;
     z-index: 1;
     position: absolute;
-    top: -80px;
-    left: 300px;
-    border: 2px solid #FFF;
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
+
+    top: -50px;
+    left: 200px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    scale: 0;
+    transform: rotate(-10deg);
+    border: 5px solid #FFF;
+
 }
