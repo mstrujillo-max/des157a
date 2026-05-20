@@ -10,11 +10,13 @@
 
     const collegeOverlay = document.querySelector(".collegePark")
     const heartCollege = document.querySelector(".collegePark .heart")
+    const mainCollege = document.querySelector(".collegePark .square")
     const leftSqrCollege = document.querySelector(".collegePark .leftSquare")
     const middleSqrCollege = document.querySelector(".collegePark .middleSquare")
     const rightSqrCollege = document.querySelector(".collegePark .rightSquare")
     const buttonCollege = document.querySelector(".collegePark .button")
 
+    const mainMabels = document.querySelector(".mabelsMarket .square")
     const mabelsOverlay = document.querySelector(".mabelsMarket")
     const heartMabels = document.querySelector(".mabelsMarket .heart")
     const leftSqrMabels = document.querySelector(".mabelsMarket .leftSquare")
@@ -22,6 +24,7 @@
     const rightSqrMabels = document.querySelector(".mabelsMarket .rightSquare")
     const buttonMabels = document.querySelector(".mabelsMarket .button")
 
+    const mainArb = document.querySelector(".arboretum .square")
     const arbOverlay = document.querySelector(".arboretum")
     const heartArb = document.querySelector(".arboretum .heart")
     const leftSqrArb = document.querySelector(".arboretum .leftSquare")
@@ -29,6 +32,7 @@
     const rightSqrArb = document.querySelector(".arboretum .rightSquare")
     const buttonArb = document.querySelector(".arboretum .button")
 
+    const mainVarsity = document.querySelector(".varsity .square")
     const varsityOverlay = document.querySelector(".varsity")
     const heartVarsity = document.querySelector(".varsity .heart")
     const leftSqrVarsity = document.querySelector(".varsity .leftSquare")
@@ -36,6 +40,7 @@
     const rightSqrVarsity = document.querySelector(".varsity .rightSquare")
     const buttonVarsity = document.querySelector(".varsity .button")
 
+    const mainTemple = document.querySelector(".temple .square")
     const templeOverlay = document.querySelector(".temple")
     const heartTemple = document.querySelector(".temple .heart")
     const leftSqrTemple = document.querySelector(".temple .leftSquare")
@@ -43,6 +48,7 @@
     const rightSqrTemple = document.querySelector(".temple .rightSquare")
     const buttonTemple = document.querySelector(".temple .button")
 
+    const mainMercado = document.querySelector(".mercado .square")
     const mercadoOverlay = document.querySelector(".mercado")
     const heartMercado = document.querySelector(".mercado .heart")
     const leftSqrMercado = document.querySelector(".mercado .leftSquare")
@@ -95,6 +101,7 @@
     });
 
     heartCollege.addEventListener("click",function(){
+        mainCollege.style.filter="grayscale(100%)";
         leftSqrCollege.style.scale= "100%";
         leftSqrCollege.style.opacity="1";
         middleSqrCollege.style.scale="100%";
@@ -104,6 +111,7 @@
     });
 
     heartCollege.addEventListener("mouseleave", function() {
+        mainCollege.style.filter="grayscale(0%)";
         leftSqrCollege.style.scale = "0%";
         leftSqrCollege.style.opacity = "0";
         middleSqrCollege.style.scale = "0%";
@@ -120,6 +128,7 @@
 
 
     heartMabels.addEventListener("click", function(){
+        mainMabels.style.filter="grayscale(100%)";
         leftSqrMabels.style.scale= "100%";
         leftSqrMabels.style.opacity="1";
         middleSqrMabels.style.scale="100%";
@@ -129,6 +138,7 @@
     });
 
     heartMabels.addEventListener("mouseleave", function() {
+        mainMabels.style.filter="grayscale(0%)";
         leftSqrMabels.style.scale = "0%";
         leftSqrMabels.style.opacity = "0";
         middleSqrMabels.style.scale = "0%";
@@ -146,6 +156,7 @@
 
 
     heartVarsity.addEventListener("click", function(){
+        mainVarsity.style.filter="grayscale(100%)";
         leftSqrVarsity.style.scale= "100%";
         leftSqrVarsity.style.opacity="1";
         middleSqrVarsity.style.scale="100%";
@@ -155,6 +166,7 @@
     });
 
     heartVarsity.addEventListener("mouseleave", function() {
+        mainVarsity.style.filter="grayscale(0%)";
         leftSqrVarsity.style.scale = "0%";
         leftSqrVarsity.style.opacity = "0";
         middleSqrVarsity.style.scale = "0%";
@@ -172,6 +184,7 @@
 
 
     heartTemple.addEventListener("click", function(){
+        mainTemple.style.filter="grayscale(100%)";
         leftSqrTemple.style.scale= "100%";
         leftSqrTemple.style.opacity="1";
         middleSqrTemple.style.scale="100%";
@@ -181,6 +194,7 @@
     });
 
     heartTemple.addEventListener("mouseleave", function() {
+        mainTemple.style.filter="grayscale(0%)";
         leftSqrTemple.style.scale = "0%";
         leftSqrTemple.style.opacity = "0";
         middleSqrTemple.style.scale = "0%";
@@ -197,6 +211,7 @@
 
 
     heartMercado.addEventListener("click", function(){
+        mainMercado.style.filter="grayscale(100%)";
         leftSqrMercado.style.scale= "100%";
         leftSqrMercado.style.opacity="1";
         middleSqrMercado.style.scale="100%";
@@ -205,6 +220,7 @@
         rightSqrMercado.style.opacity="1";
     });
     heartMercado.addEventListener("mouseleave", function() {
+        mainMercado.style.filter="grayscale(0%)";
         leftSqrMercado.style.scale = "0%";
         leftSqrMercado.style.opacity = "0";
         middleSqrMercado.style.scale = "0%";
@@ -220,6 +236,7 @@
     });
 
     heartArb.addEventListener("click", function(){
+        mainArb.style.filter="grayscale(100%)";
         leftSqrArb.style.scale= "100%";
         leftSqrArb.style.opacity="1";
         middleSqrArb.style.scale="100%";
@@ -229,6 +246,7 @@
     });
 
     heartArb.addEventListener("mouseleave", function() {
+        mainArb.style.filter="grayscale(0%)";
         leftSqrArb.style.scale = "0%";
         leftSqrArb.style.opacity = "0";
         middleSqrArb.style.scale = "0%";

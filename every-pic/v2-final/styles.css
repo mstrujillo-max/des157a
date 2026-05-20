@@ -85,14 +85,7 @@ svg{
 }
 
 .frame2{
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* margin-top: 200px; */
-    /* z-index: 1; */
     display: none;
-
-    
 }
 
 .container2 {
@@ -166,6 +159,7 @@ svg{
     display: none;
 
 }
+
 .collegePark .square{
     background-image: url(images/tree-arch.jpg);
     border: white solid 20px;
@@ -173,6 +167,8 @@ svg{
     height: 450px;
     display: block;
     z-index: 0;
+    /* filter: grayscale(0%); */
+    transition: filter 600ms ease;
     
 }
 
@@ -183,13 +179,11 @@ svg{
     background-color: #FFF;
     z-index: 1;
     position: absolute;
-
     border: 5px solid #FFF;
     top: 80px;
     left: -50px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
     transform: rotate(-20deg);
-
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
@@ -204,14 +198,11 @@ svg{
     background-color: #FFF;
     z-index: 1;
     position: absolute;
-
     border: 5px solid #FFF;
     top: 10px;
     left: 50px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
     transform: rotate(10deg);
-
-
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
@@ -225,15 +216,12 @@ svg{
     background-color: #FFF;
     z-index: 1;
     position: absolute;
-
     top: -50px;
     left: 200px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
     scale: 0;
     transform: rotate(-10deg);
     border: 5px solid #FFF;
-
-
     opacity: 0;
     transition: all 0.5s ease;
 
@@ -261,6 +249,8 @@ svg{
     display: block;
     position: relative;
     z-index: 0;
+    transition: filter 600ms ease;
+
 
 }
 
@@ -274,7 +264,6 @@ svg{
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
-
     border: 5px solid #FFF;
     top: 80px;
     left: -50px;
@@ -292,7 +281,6 @@ svg{
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
-
     border: 5px solid #FFF;
     top: 10px;
     left: 50px;
@@ -311,7 +299,6 @@ svg{
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
-
     top: -50px;
     left: 200px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
@@ -341,6 +328,8 @@ svg{
     display: block;
     position: relative;
     z-index: 0;
+    transition: filter 600ms ease;
+
 }
 
 .arboretum .leftSquare{
@@ -353,7 +342,6 @@ svg{
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
-
     border: 5px solid #FFF;
     top: 80px;
     left: -50px;
@@ -389,7 +377,6 @@ svg{
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
-
     top: -50px;
     left: 200px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
@@ -420,6 +407,8 @@ svg{
     display: block;
     position: relative;
     z-index: 0;
+    transition: filter 600ms ease;
+
 
 }
 
@@ -433,7 +422,6 @@ svg{
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
-
     border: 5px solid #FFF;
     top: 80px;
     left: -50px;
@@ -469,7 +457,6 @@ svg{
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
-
     top: -50px;
     left: 200px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
@@ -501,6 +488,8 @@ svg{
     display: block;
     position: relative;
     z-index: 0;
+    transition: filter 600ms ease;
+
 }
 
 .varsity .leftSquare{
@@ -513,7 +502,6 @@ svg{
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
-
     border: 5px solid #FFF;
     top: 80px;
     left: -50px;
@@ -549,7 +537,6 @@ svg{
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
-
     top: -50px;
     left: 200px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
@@ -580,6 +567,8 @@ svg{
     display: block;
     position: relative;
     z-index: 0;
+    transition: filter 600ms ease;
+
 }
 
 .temple .leftSquare{
@@ -592,7 +581,6 @@ svg{
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
-
     border: 5px solid #FFF;
     top: 80px;
     left: -50px;
@@ -628,7 +616,6 @@ svg{
     scale: 0;
     opacity: 0;
     transition: all 0.5s ease;
-
     top: -50px;
     left: 200px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
