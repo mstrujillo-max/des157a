@@ -57,8 +57,10 @@ svg{
 
 .frame1{
     display: flex;
-    margin: 200px 100px;
-    gap: 200px;    
+    gap: 100px;
+    max-width: 1000px;  
+    margin: auto;  
+    margin-top: 100px;
     /* display: none; */
 
 }
@@ -151,7 +153,7 @@ svg{
 
 }
 .collegePark .square{
-    background-image: url(images/tree-arch.svg);
+    background-image: url(images/tree-arch.jpg);
     border: white solid 20px;
     width: 400px;
     height: 450px;
@@ -161,7 +163,7 @@ svg{
 }
 
 .collegePark .leftSquare{
-    background-image: url(images/L-c.svg);
+    background-image: url(images/L-c.jpg);
     width: 107px;
     height: 100px;
     background-color: #FFF;
@@ -176,7 +178,7 @@ svg{
 }
 
 .collegePark .middleSquare{
-    background-image: url(images/M-c.svg);
+    background-image: url(images/M-c.jpg);
     width: 138px;
     height: 130px;
     background-color: #FFF;
@@ -191,7 +193,7 @@ svg{
 }
 
 .collegePark .rightSquare{
-    background-image: url(images/R-c.svg);
+    background-image: url(images/R-c.jpg);
     width: 120px;
     height: 115px;
     background-color: #FFF;
@@ -220,7 +222,7 @@ svg{
 
 }
 .mabelsMarket .square{
-    background-image: url(images/mabels-outside.svg);
+    background-image: url(images/Mabels.jpg);
     border: white solid 20px;
     width: 400px;
     height: 450px;
@@ -231,7 +233,7 @@ svg{
 }
 
 .mabelsMarket .leftSquare{
-    background-image: url(images/L-m.svg);
+    background-image: url(images/L-m.jpg);
     width: 107px;
     height: 100px;
     background-color: #FFF;
@@ -246,7 +248,7 @@ svg{
 }
 
 .mabelsMarket .middleSquare{
-    background-image: url(images/M-m.svg);
+    background-image: url(images/M-m.jpg);
     width: 138px;
     height: 130px;
     background-color: #FFF;
@@ -261,7 +263,7 @@ svg{
 }
 
 .mabelsMarket .rightSquare{
-    background-image: url(images/R-m.svg);
+    background-image: url(images/R-m.jpg);
     width: 120px;
     height: 115px;
     background-color: #FFF;
@@ -288,7 +290,7 @@ svg{
 }
 
 .arboretum .square{
-    background-image: url(images/arb.svg);
+    background-image: url(images/arb.jpg);
     border: white solid 20px;
     width: 400px;
     height: 450px;
@@ -298,7 +300,7 @@ svg{
 }
 
 .arboretum .leftSquare{
-    background-image: url(images/L-a.svg);
+    background-image: url(images/L-a.jpg);
     width: 107px;
     height: 100px;
     background-color: #FFF;
@@ -313,7 +315,7 @@ svg{
 }
 
 .arboretum .middleSquare{
-    background-image: url(images/M-a.svg);
+    background-image: url(images/M-a.jpg);
     width: 138px;
     height: 130px;
     background-color: #FFF;
@@ -328,7 +330,7 @@ svg{
 }
 
 .arboretum .rightSquare{
-    background-image: url(images/R-a.svg);
+    background-image: url(images/R-a.jpg);
     width: 120px;
     height: 115px;
     background-color: #FFF;
@@ -356,7 +358,7 @@ svg{
 }
 
 .mercado .square{
-    background-image: url(images/westlake.svg);
+    background-image: url(images/westlake.jpg);
     border: white solid 20px;
     width: 400px;
     height: 450px;
@@ -367,7 +369,7 @@ svg{
 }
 
 .mercado .leftSquare{
-    background-image: url(images/L-w.svg);
+    background-image: url(images/L-w.jpg);
     width: 107px;
     height: 100px;
     background-color: #FFF;
@@ -382,7 +384,7 @@ svg{
 }
 
 .mercado .middleSquare{
-    background-image: url(images/M-w.svg);
+    background-image: url(images/M-w.jpg);
     width: 138px;
     height: 130px;
     background-color: #FFF;
@@ -397,7 +399,7 @@ svg{
 }
 
 .mercado .rightSquare{
-    background-image: url(images/R-w.svg);
+    background-image: url(images/R-w.jpg);
     width: 120px;
     height: 115px;
     background-color: #FFF;
@@ -426,7 +428,7 @@ svg{
 }
 
 .varsity .square{
-    background-image: url(images/varsity.svg);
+    background-image: url(images/varsity.jpg);
     border: white solid 20px;
     width: 400px;
     height: 450px;
@@ -436,7 +438,7 @@ svg{
 }
 
 .varsity .leftSquare{
-    background-image: url(images/L-v.svg);
+    background-image: url(images/L-v.jpg);
     width: 107px;
     height: 100px;
     background-color: #FFF;
@@ -451,7 +453,7 @@ svg{
 }
 
 .varsity .middleSquare{
-    background-image: url(images/M-v.svg);
+    background-image: url(images/M-v.jpg);
     width: 138px;
     height: 130px;
     background-color: #FFF;
@@ -466,7 +468,7 @@ svg{
 }
 
 .varsity .rightSquare{
-    background-image: url(images/R-v.svg);
+    background-image: url(images/R-v.jpg);
     width: 120px;
     height: 115px;
     background-color: #FFF;
@@ -494,7 +496,7 @@ svg{
 }
 
 .temple .square{
-    background-image: url(images/temple.svg);
+    background-image: url(images/temple.jpg);
     border: white solid 20px;
     width: 400px;
     height: 450px;
@@ -504,7 +506,7 @@ svg{
 }
 
 .temple .leftSquare{
-    background-image: url(images/L-t.svg);
+    background-image: url(images/L-t.jpg);
     width: 107px;
     height: 100px;
     background-color: #FFF;
@@ -519,7 +521,7 @@ svg{
 }
 
 .temple .middleSquare{
-    background-image: url(images/M-t.svg);
+    background-image: url(images/M-t.jpg);
     width: 138px;
     height: 130px;
     background-color: #FFF;
@@ -534,7 +536,7 @@ svg{
 }
 
 .temple .rightSquare{
-    background-image: url(images/R-t.svg);
+    background-image: url(images/R-t.jpg);
     width: 120px;
     height: 115px;
     background-color: #FFF;
