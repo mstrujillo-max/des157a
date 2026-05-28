@@ -1,0 +1,634 @@
+body{
+    background-image: url(images/background.svg);
+    background-size: cover;
+}
+
+h1{
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+h2{
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h3{
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.frame2 h2{
+    background-color: #0000005d;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+svg{
+    cursor: pointer;
+    opacity: 0;
+}
+.button{
+    cursor: pointer;
+    width: 200px;
+    background-color: #FFF;
+    color: #000;
+    font-family: Outfit;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    box-shadow: 4px 4px 0px #000;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.button:hover{
+    border: 2px solid #000;
+    transition: all .5s;
+
+}
+
+.frame1{
+    display: flex;
+    gap: 100px;
+    max-width: 1000px;  
+    margin: auto;  
+    margin-top: 150px;
+    /* display: none; */
+
+}
+
+
+
+/* big shelf */
+.frame2 .container2 {
+    max-width: 500px;
+    aspect-ratio: 400 / 451;
+    position: relative;
+    margin: auto;
+    margin-top: 80px;
+}
+.frame2 img, .frame2 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.frame2{
+    display: none;
+}
+
+.container2 {
+  transition: filter 0.1s ease-in-out;
+}
+
+.container2:hover{
+    filter:
+    drop-shadow(0 0 8px rgba(255,255,255,0.8))
+    drop-shadow(0 0 24px rgba(255,255,255,0.5))
+    drop-shadow(0 0 48px rgba(255,255,255,0.25));
+}
+
+.text{
+    width: 600px;
+}
+
+
+
+.collegePark h2, .mabelsMarket h2, .arboretum h2, .mercado h2, .varsity h2, .temple h2{
+    line-height: 36px;
+}
+
+.container{
+    position: relative;
+}
+
+
+.heart{
+    z-index: 1;
+    position: absolute;
+    top: 400px;
+    left: 350px;
+    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.444));
+
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.heart img {
+    cursor: pointer;
+    animation: pulse 1.5s infinite ease-in-out;
+    transition: transform 0.6s ease-out; /* eases back to normal on mouse-off */
+}
+
+.heart img:hover {
+    animation: heartbeat 1.2s ease-in-out infinite;
+    transition: none; /* disable transition while animating */
+}
+
+@keyframes heartbeat {
+  0%   { transform: translateY(0)     rotate(0deg); }
+  25%  { transform: translateY(-6px)  rotate(12deg); }
+  50%  { transform: translateY(0)     rotate(0deg); }
+  75%  { transform: translateY(-6px)  rotate(-12deg); }
+  100% { transform: translateY(0)     rotate(0deg); }
+}
+
+
+.collegePark{
+    display: flex;
+    gap: 200px;    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    display: none;
+
+}
+
+.collegePark .square{
+    background-image: url(images/tree-arch.jpg);
+    border: white solid 20px;
+    width: 400px;
+    height: 450px;
+    display: block;
+    z-index: 0;
+    /* filter: grayscale(0%); */
+    transition: filter 600ms ease;
+    
+}
+
+.collegePark .leftSquare{
+    background-image: url(images/L-c.jpg);
+    width: 107px;
+    height: 100px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    border: 5px solid #FFF;
+    top: 80px;
+    left: -50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(-20deg);
+    scale: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+
+
+}
+
+.collegePark .middleSquare{
+    background-image: url(images/M-c.jpg);
+    width: 138px;
+    height: 130px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    border: 5px solid #FFF;
+    top: 10px;
+    left: 50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(10deg);
+    scale: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+
+}
+
+.collegePark .rightSquare{
+    background-image: url(images/R-c.jpg);
+    width: 120px;
+    height: 115px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    top: -50px;
+    left: 200px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    scale: 0;
+    transform: rotate(-10deg);
+    border: 5px solid #FFF;
+    opacity: 0;
+    transition: all 0.5s ease;
+
+}
+
+
+
+
+
+.mabelsMarket{
+    display: flex;
+    gap: 200px;    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    display: none;
+
+}
+.mabelsMarket .square{
+    background-image: url(images/Mabels.jpg);
+    border: white solid 20px;
+    width: 400px;
+    height: 450px;
+    display: block;
+    position: relative;
+    z-index: 0;
+    transition: filter 600ms ease;
+
+
+}
+
+.mabelsMarket .leftSquare{
+    background-image: url(images/L-m.jpg);
+    width: 107px;
+    height: 100px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    scale: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border: 5px solid #FFF;
+    top: 80px;
+    left: -50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(-20deg);
+}
+
+.mabelsMarket .middleSquare{
+    background-image: url(images/M-m.jpg);
+    width: 138px;
+    height: 130px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    scale: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border: 5px solid #FFF;
+    top: 10px;
+    left: 50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(10deg);
+
+}
+
+.mabelsMarket .rightSquare{
+    background-image: url(images/R-m.jpg);
+    width: 120px;
+    height: 115px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    scale: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    top: -50px;
+    left: 200px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    scale: 0;
+    transform: rotate(-10deg);
+    border: 5px solid #FFF;
+
+}
+
+
+
+.arboretum{
+    display: flex;
+    gap: 200px;    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    display: none;
+}
+
+.arboretum .square{
+    background-image: url(images/arb.jpg);
+    border: white solid 20px;
+    width: 400px;
+    height: 450px;
+    display: block;
+    position: relative;
+    z-index: 0;
+    transition: filter 600ms ease;
+
+}
+
+.arboretum .leftSquare{
+    background-image: url(images/L-a.jpg);
+    width: 107px;
+    height: 100px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    scale: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border: 5px solid #FFF;
+    top: 80px;
+    left: -50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(-20deg);
+}
+
+.arboretum .middleSquare{
+    background-image: url(images/M-a.jpg);
+    width: 138px;
+    height: 130px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    scale: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border: 5px solid #FFF;
+    top: 10px;
+    left: 50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(10deg);
+
+}
+
+.arboretum .rightSquare{
+    background-image: url(images/R-a.jpg);
+    width: 120px;
+    height: 115px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    scale: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    top: -50px;
+    left: 200px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    scale: 0;
+    transform: rotate(-10deg);
+    border: 5px solid #FFF;
+
+}
+
+
+
+.mercado{
+    display: flex;
+    gap: 200px;    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    display: none;
+
+}
+
+.mercado .square{
+    background-image: url(images/westlake.jpg);
+    border: white solid 20px;
+    width: 400px;
+    height: 450px;
+    display: block;
+    position: relative;
+    z-index: 0;
+    transition: filter 600ms ease;
+
+
+}
+
+.mercado .leftSquare{
+    background-image: url(images/L-w.jpg);
+    width: 107px;
+    height: 100px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    scale: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border: 5px solid #FFF;
+    top: 80px;
+    left: -50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(-20deg);
+}
+
+.mercado .middleSquare{
+    background-image: url(images/M-w.jpg);
+    width: 138px;
+    height: 130px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    scale: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border: 5px solid #FFF;
+    top: 10px;
+    left: 50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(10deg);
+
+}
+
+.mercado .rightSquare{
+    background-image: url(images/R-w.jpg);
+    width: 120px;
+    height: 115px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    scale: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    top: -50px;
+    left: 200px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    scale: 0;
+    transform: rotate(-10deg);
+    border: 5px solid #FFF;
+
+}
+
+
+
+
+.varsity{
+    display: flex;
+    gap: 200px;    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    display: none;
+
+}
+
+.varsity .square{
+    background-image: url(images/varsity.jpg);
+    border: white solid 20px;
+    width: 400px;
+    height: 450px;
+    display: block;
+    position: relative;
+    z-index: 0;
+    transition: filter 600ms ease;
+
+}
+
+.varsity .leftSquare{
+    background-image: url(images/L-v.jpg);
+    width: 107px;
+    height: 100px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    scale: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border: 5px solid #FFF;
+    top: 80px;
+    left: -50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(-20deg);
+}
+
+.varsity .middleSquare{
+    background-image: url(images/M-v.jpg);
+    width: 138px;
+    height: 130px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    scale: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border: 5px solid #FFF;
+    top: 10px;
+    left: 50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(10deg);
+
+}
+
+.varsity .rightSquare{
+    background-image: url(images/R-v.jpg);
+    width: 120px;
+    height: 115px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    scale: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    top: -50px;
+    left: 200px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    scale: 0;
+    transform: rotate(-10deg);
+    border: 5px solid #FFF;
+
+}
+
+
+
+.temple{
+    display: flex;
+    gap: 200px;    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    display: none;
+
+}
+
+.temple .square{
+    background-image: url(images/temple.jpg);
+    border: white solid 20px;
+    width: 400px;
+    height: 450px;
+    display: block;
+    position: relative;
+    z-index: 0;
+    transition: filter 600ms ease;
+
+}
+
+.temple .leftSquare{
+    background-image: url(images/L-t.jpg);
+    width: 107px;
+    height: 100px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    scale: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border: 5px solid #FFF;
+    top: 80px;
+    left: -50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(-20deg);
+}
+
+.temple .middleSquare{
+    background-image: url(images/M-t.jpg);
+    width: 138px;
+    height: 130px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    scale: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border: 5px solid #FFF;
+    top: 10px;
+    left: 50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    transform: rotate(10deg);
+
+}
+
+.temple .rightSquare{
+    background-image: url(images/R-t.jpg);
+    width: 120px;
+    height: 115px;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    scale: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    top: -50px;
+    left: 200px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+    scale: 0;
+    transform: rotate(-10deg);
+    border: 5px solid #FFF;
+
+}
