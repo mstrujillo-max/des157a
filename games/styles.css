@@ -1,0 +1,42 @@
+body{
+    background-color: #B4D5E2;
+}
+
+header{
+    background-color: #B4D5E2;
+}
+
+main{
+    background-color: #6B0504;
+    
+}
+
+img{
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+
+
+
+
+
+/* text styling */
+h1{
+    font-family: "Outfit";
+    font-weight: 900;
+    font-size: 64px;
+    color: #152528;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+h2{
+    font-family: "Outfit";
+    font-weight: 600;
+    color: #152528;
+    text-align: center;
+
+}
+
