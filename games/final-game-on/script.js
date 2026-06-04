@@ -3,7 +3,9 @@
     console.log('reading JS');
 
     // variables for interface elements
+    const startSound = new Audio("sounds/start-game.mp3")
     const music = new Audio ('sounds/starry.mp3');
+    music.loop= true;
     const bttn = document.querySelector('#action a');
     const game = document.querySelector('#game');
     const message = document.querySelector('#message');
@@ -29,7 +31,15 @@
     // Gets the game started
     bttn.addEventListener('click', function(event){
         event.preventDefault();
-        music.play();
+        startSound.play();
+
+        setTimeout(() => {
+            music.play()
+                .then(() => console.log("Audio is now playing."))
+                .catch(error => console.error("Playback failed:", error));
+        }, 1000); 
+
+
         gameData.sequence = [];
         callSequence(gameData.count, gameData.speed);
     });
@@ -122,6 +132,8 @@
                         if( gameData.match[i] != gameData.sequence[i]){
                             status = 0;
                             message.innerHTML = "Sorry you lose. Better luck next time!";
+                            music.pause();        
+                            music.currentTime = 0;
                         }
                         /* If none of the matches in the loop trigger an error, status
                         is set to 1 and that value will be used to continue the game */
