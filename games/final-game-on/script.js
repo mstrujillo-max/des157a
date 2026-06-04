@@ -3,6 +3,7 @@
     console.log('reading JS');
 
     // variables for interface elements
+    const music = new Audio ('sounds/starry.mp3');
     const bttn = document.querySelector('#action a');
     const game = document.querySelector('#game');
     const message = document.querySelector('#message');
@@ -28,6 +29,7 @@
     // Gets the game started
     bttn.addEventListener('click', function(event){
         event.preventDefault();
+        music.play();
         gameData.sequence = [];
         callSequence(gameData.count, gameData.speed);
     });
